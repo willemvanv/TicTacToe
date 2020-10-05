@@ -46,16 +46,20 @@ int main() {
     //Count points for win or tie
     if (wins != 0) {
       if (wins == 1) {
+	updateGrid(grid);
 	xWins++;
 	cout << "X Win!" << endl;
       }
       if (wins == 2) {
+	updateGrid(grid);
 	oWins++;
 	cout << "O Win!" << endl;
       }
       if (wins == 3) {
+	updateGrid(grid);
 	cout << "Tie!" << endl;
       }
+      move = 0;
       cout << "X Wins: " << xWins << "  O Wins: " << oWins << endl;
       grid[1][1] = ' '; grid[1][2] = ' '; grid[1][3] = ' '; grid[2][1] = ' ';
       grid[2][2] = ' '; grid[2][3] = ' '; grid[3][1] = ' '; grid[3][2] = ' ';grid[3][3] = ' ';  
